@@ -21,15 +21,15 @@
                         It serves as a way to introduce fans to Princess Donut, and 
                         connect them with one another.</dd>
                     <dt>Priority tasks</dt>
-                    <dd>1) Find out about the Princess Posse; 2) Become a member 3) Find an answer to a question</dd>
+                    <dd>1) Find out about the Princess Posse; 2) Become a member; 3) Find an answer to a question</dd>
                     <dt>Pages</dt>
                     <dd>Home: index.html; About: about.html; Contact: contact.html; Get Help: help.html</dd>
                     <dt>Repository</dt>
-                    <dd>[URL]</dd>
+                    <dd><a href="https://github.com/StephaniePeacock/Capstone.git" target="_blank">https://github.com/StephaniePeacock/Capstone.git</a></dd>
                     <dt>Published site</dt>
-                    <dd>[URL]</dd>
+                    <dd><a href="https://stephaniepeacock.github.io/Capstone/" target="_blank">https://stephaniepeacock.github.io/Capstone/</a></dd>
                     <dt>Code defense</dt>
-                    <dd>[URL or live-defense statement]</dd>
+                    <dd>[URL or live-defense statement - Working on it!]</dd>
                 </dl>
             </section>
             <section>
@@ -45,6 +45,90 @@
                     </thead>
                     <tbody>
                         <tr>
+                            <td>(WIP) Semantic Structure</td>
+                            <td>Site Wide</td>
+                            <td>To improve accessibility and maintainability of the HTML structure.</td>
+                            <td>Refactor for consistency</td>
+                        </tr>
+                        <tr>
+                            <td>Final Design System</td>
+                            <td>Site wide</td>
+                            <td>It gives the site a consistent look and feel</td>
+                            <td>Adapting portions, refactoring for consistency</td>
+                        </tr>
+                        <tr>
+                            <td>Figure & Caption</td>
+                            <td>index.html / mongo.png</td>
+                            <td>Donut always wants to show off Mongo, it would be a crime if he wasn't included.</td>
+                            <td>Keeping as is</td>
+                        </tr>
+                        <tr>
+                            <td>Callout</td>
+                            <td>N/A</td>
+                            <td>I am not planning to use this component in the current design.</td>
+                            <td>Omit - unless I can find a way to work it in.</td>
+                        </tr>
+                        <tr>
+                            <td>(WIP) Data Table</td>
+                            <td>about.html</td>
+                            <td>It will be used to display data about fictional members of the Princess Posse.</td>
+                            <td>Replaces the data table from module 2 - extensive adaptation and refactoring to meet table feedback from module 2</td>
+                        </tr>
+                        <tr>
+                            <td>(WIP) Application form</td>
+                            <td>join.html</td>
+                            <td>Every club needs a way for potential members to apply</td>
+                            <td>Adapting existing form from module 3</td>
+                        </tr>
+                        <tr>
+                            <td>(WIP) Original SVG</td>
+                            <td>about.html</td>
+                            <td>It will be used to display an image of the Princess Posse's Logo, along with "metrics" about their universe wide membership data.</td>
+                            <td>New - not yet created</td>
+                        </tr>
+                        <tr>
+                            <td>Responsive Navigation System</td>
+                            <td>Site wide</td>
+                            <td>This will allow users to easily navigate the site and find the information they are looking for, regardless of their device.</td>
+                            <td>Adapted module 5 navigation - extensively modified both narrow and wide width styles - layering, and animation (forthcoming)</td>
+                        </tr>
+                        <tr>
+                            <td>Clipped Treatment & Absolute Positioning</td>
+                            <td>index.html - crawler-badge</td>
+                            <td>Gives viewers instant access to Donut's crawler number. Presented in a crown shape because she's a Princess.</td>
+                            <td>Adapted - changed its parent and positioning.</td>
+                        </tr>
+                        <tr>
+                            <td>Sticky Positioning</td>
+                            <td>index.html - Royal Mount section</td>
+                            <td>It is one of Donut's catchphrases, and fans would expect to see it implemented in the design.</td>
+                            <td>Keeping as is</td>
+                        </tr>
+                        <tr>
+                            <td>Shape-outside</td>
+                            <td>index.html - princess_donut.svg</td>
+                            <td>A page about Princess Donut needs to have a picture of her!</td>
+                            <td>Adapting - I will be modifying the SVG in illustrator.</td>
+                        </tr>
+                        <tr>
+                            <td>Controlled Overlap</td>
+                            <td>N/A</td>
+                            <td>I do not plan on using this technique.</td>
+                            <td>Omit - I will be adding the sunglasses as part of the base SVG image instead.</td>
+                        </tr>
+                        <tr>
+                            <td>(WIP) Motion Treatment</td>
+                            <td>Site Wide - narrow-view nav open</td>
+                            <td>It will add a smoother feel and make opening the menu feel more tactile.</td>
+                            <td>New - will add transition animation when opening the nav in narrow view</td>
+                        </tr>
+                        <tr>
+                            <td>(WIP) Motion Treatment</td>
+                            <td>help.html - FAQ Details Animation</td>
+                            <td>This will add a smoother feel to the FAQ details section, making it more engaging for users.</td>
+                            <td>Adapting the details animation from Module 6</td>
+                        </tr>
+                        <tr>
                             <td>[Course component]</td>
                             <td>[Page/component/file]</td>
                             <td>[Why it belongs]</td>
@@ -57,13 +141,13 @@
             <section>
                 <h2>3. Focused Release Check</h2>
                 <ul>
-                    <li>HTML and CSS validation: [result]</li>
-                    <li>Published links and assets: [result]</li>
-                    <li>320 CSS pixels and 200% zoom: [result]</li>
-                    <li>Keyboard and visible focus: [result]</li>
-                    <li>Form labels, constraints, errors, and recovery: [result]</li>
-                    <li>Reduced motion and JavaScript unavailable: [result]</li>
-                    <li>Two current browsers: [result]</li>
+                    <li>HTML and CSS validation: index.html - no errors found</li>
+                    <li>Published links and assets: working and visible</li>
+                    <li>320 CSS pixels and 200% zoom: as intended</li>
+                    <li>Keyboard and visible focus: All existing items have proper focus states and keyboard accessible</li>
+                    <li>Form labels, constraints, errors, and recovery: WIP</li>
+                    <li>Reduced motion and JavaScript unavailable: WIP</li>
+                    <li>Two current browsers: Chrome & Brave both functioning correctly</li>
                 </ul>
             </section>
             <section>
@@ -78,6 +162,12 @@
                         </tr>
                     </thead>
                     <tbody>
+                        <tr>
+                            <td>Navigation tabs displayed incorrectly when viewing in wide format after initial changes. After correcting the narrow view styling, wide-view navigation was extending past the width of the page, and was showing as a very large block, pushing the rest of the page down.</td>
+                            <td>nav-list, nav-list a</td>
+                            <td>I added width: auto to the .nav-list media query. </td>
+                            <td>Both wide and narrow view nav lists now display as intended.</td>
+                        </tr>
                         <tr>
                             <td>[What happened and under which condition]</td>
                             <td>[Affected content, task, or user]</td>

@@ -322,7 +322,7 @@ img{
 }
 .js .nav-list[data-open="false"] { display:none; }
 @media (min-width:63rem){
-    main{
+    #main-home{
         grid-template-columns:25rem 1fr;
     }
     .site-header { 
