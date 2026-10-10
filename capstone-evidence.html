@@ -128,12 +128,6 @@
                             <td>This will add a smoother feel to the FAQ details section, making it more engaging for users.</td>
                             <td>Adapted the details animation from Module 6</td>
                         </tr>
-                        <tr>
-                            <td>[Course component]</td>
-                            <td>[Page/component/file]</td>
-                            <td>[Why it belongs]</td>
-                            <td>[Adapt, refactor, replace, omit, or new]</td>
-                        </tr>
                     </tbody>
                 </table>
                 <p>Add enough rows to locate semantic structure, the design system, figure, table, form, SVG, navigation/layout, positioning/layering, shape, effect/motion, testing, and documentation.</p>
@@ -141,7 +135,7 @@
             <section>
                 <h2>3. Focused Release Check</h2>
                 <ul>
-                    <li>HTML and CSS validation: index.html - no errors found</li>
+                    <li>HTML and CSS validation: All pages pass html checks. Only Warning for css is .censored using same color for background & text- which is intentional.</li>
                     <li>Published links and assets: working and visible</li>
                     <li>320 CSS pixels and 200% zoom: as intended</li>
                     <li>Keyboard and visible focus: All existing items have proper focus states and keyboard accessible</li>
@@ -169,14 +163,31 @@
                             <td>Both wide and narrow view nav lists now display as intended.</td>
                         </tr>
                         <tr>
-                            <td>[What happened and under which condition]</td>
-                            <td>[Affected content, task, or user]</td>
-                            <td>[What changed]</td>
-                            <td>[Repeated condition and observed result]</td>
+                            <td>Table regions were displaying double borders when focused.</td>
+                            <td>about.html - .table-region, th</td>
+                            <td>I added :not(th) to the :focus-visible selector. My specificity couldn't target .table-region with this same tactic, so I overrode it with a specific .table-region:focus-visible selector and the value outline:none</td>
+                            <td>Tabbing focus to within the table now only shows one border as intended.</td>
+                        </tr>
+                        <tr>
+                            <td>Nav-list was layered below the main content at narrow widths</td>
+                            <td>nav-list</td>
+                            <td>I removed the z-index property from the .site-header - it's value of 0 was causing the entire header to lay below the main content.</td>
+                            <td>Nav-list now correctly layers above the main content at all widths.</td>
+                        </tr>
+                        <tr>
+                            <td>Nav-list animation was playing at wide width.</td>
+                            <td>nav-list</td>
+                            <td>I added a media query within the reduced motion media query that limits the animation to narrow widths.</td>
+                            <td>Nav-list no longer shows animation at wide widths.</td>
+                        </tr>
+                        <tr>
+                            <td>Failed HTML check - help.html</td>
+                            <td>duplicate id="result"</td>
+                            <td>I removed the id from the results, as the tag was not being used for styling.</td>
+                            <td>HTML validation now passes for help.html.</td>
                         </tr>
                     </tbody>
                 </table>
-                <p>Add two more rows.</p>
             </section>
             <section>
                 <h2>5. Screenshots</h2>
