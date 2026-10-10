@@ -126,11 +126,12 @@ header h1 {
     align-items: start;
     gap:.25rem;
     margin: 0; 
-    width: 100vw;
+    width: auto;
     background: var(--color-heading);
     font-size: 1.5rem;
 }
 .js .nav-list {
+    width: 100vw;
     padding: 0;
     position: absolute;
     top: 6rem;
@@ -140,10 +141,12 @@ header h1 {
 }
 .nav-list a { 
     display:block; 
-    width:100vw;
     color:var(--color-card); 
     padding:1rem 2rem; 
     text-decoration:none; 
+}
+.js .nav-list[data-open="true"] a {
+    width:100vw;
 }
 .nav-list a:hover, .nav-list a:focus-visible, .brand:focus, .brand:hover {
     outline:3px solid var(--color-notice);

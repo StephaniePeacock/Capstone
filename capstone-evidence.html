@@ -128,6 +128,7 @@
                             <td>This will add a smoother feel to the FAQ details section, making it more engaging for users.</td>
                             <td>Adapted the details animation from Module 6</td>
                         </tr>
+                        
                     </tbody>
                 </table>
                 <p>Add enough rows to locate semantic structure, the design system, figure, table, form, SVG, navigation/layout, positioning/layering, shape, effect/motion, testing, and documentation.</p>
@@ -139,8 +140,8 @@
                     <li>Published links and assets: working and visible</li>
                     <li>320 CSS pixels and 200% zoom: as intended</li>
                     <li>Keyboard and visible focus: All existing items have proper focus states and keyboard accessible</li>
-                    <li>Form labels, constraints, errors, and recovery: WIP</li>
-                    <li>Reduced motion and JavaScript unavailable: WIP</li>
+                    <li>Form labels, constraints, errors, and recovery: completed</li>
+                    <li>Reduced motion and JavaScript unavailable: Animations and transforms do not apply when reduced motion is enabled. Menu is static and visible with javascript disabled. JavaScript is disabled</li>
                     <li>Two current browsers: Chrome & Brave both functioning correctly</li>
                 </ul>
             </section>
@@ -181,6 +182,12 @@
                             <td>Nav-list no longer shows animation at wide widths.</td>
                         </tr>
                         <tr>
+                            <td>Nav-list issues without javascript was causing overflow issues.</td>
+                            <td>nav-list</td>
+                            <td>Moved width settings to .js .nav-list specific selectors.</td>
+                            <td>Nav-list no longer shows animation at wide widths.</td>
+                        </tr>
+                        <tr>
                             <td>Failed HTML check - help.html</td>
                             <td>duplicate id="result"</td>
                             <td>I removed the id from the results, as the tag was not being used for styling.</td>
@@ -191,13 +198,14 @@
             </section>
             <section>
                 <h2>5. Screenshots</h2>
-                <p>[Insert two or three labeled screenshots. Connect each screenshot to a requirement, test, or repair.]</p>
+                <p><a href="layer-issue.png" target="_blank">layer-issue.png</a> This screenshot demonstrates the layering issue I had with nav-list falling below the main page content.<br>
+                <a href="double-outline.png" target="_blank">double-outline.png</a> This screenshot demonstrates the double outline I was experiencing when focusing items within the table-region.</p>
             </section>
             <section>
                 <h2>6. Sources, Assets, and AI</h2>
-                <p><strong>MDN/official sources:</strong> [Concise list with links]</p>
-                <p><strong>Assets and licenses:</strong> [Asset, creator, source, license/permission, and modification]</p>
-                <p><strong>AI disclosure:</strong> [State “No generative AI was used,” or document the tool, purpose, meaningful assistance, verification, and final decision.]</p>
+                <p><strong>MDN/official sources:</strong> I didn't reference MDN beyond the pages used during previous modules.</p>
+                <p><strong>Assets and licenses:</strong> All images except the custom svg were licensed through Adobe Stock. The Princess.Donut.svg is a composite of three separate and modified svg files. Mongo was generated using Adobe Firefly. The custom SVG was created by me in illustrator and modified within the html. All characters are the property of Matt Dinniman.</p>
+                <p><strong>AI disclosure:</strong> No generative AI was used</p>
             </section>
         </main>
     </body>
