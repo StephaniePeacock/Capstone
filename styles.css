@@ -10,6 +10,7 @@
     --color-body: #280233;
     --color-shadow: #28023350;
     --color-notice: #FFB006;
+    --color-error:#b3261e;
     --color-graphic-primary: #000;
     --color-graphic-accent: var(--color-heading);
     --radius:.5rem;
@@ -462,7 +463,7 @@ textarea{
 #specific-pet-no { grid-area: b2; }
 #specific-pet-no-label { grid-area: l2; }
 .pet-id-field, .pet-details-field { grid-area: q; }
-#pet-compatibility {
+#event-interests {
     display: grid;
     grid-template-columns: 1fr 15fr 1fr 15fr;
     grid-template-areas: 
@@ -475,12 +476,12 @@ textarea{
 #q3 { grid-area: q3; }
 #children-yes { grid-area: b3; }
 #children-no { grid-area: b4; }
-#other-pet-help { grid-area: q4; }
-#other-pet-yes { grid-area: b5; }
-#other-pet-yes-label { grid-area: l5; }
-#other-pet-no { grid-area: b6; }
-#other-pet-no-label { grid-area: l6; }
-.other-pets-field { grid-area: q5; }
+#events-help { grid-area: q4; }
+#events-yes { grid-area: b5; }
+#events-yes-label { grid-area: l5; }
+#events-no { grid-area: b6; }
+#events-no-label { grid-area: l6; }
+.events-field { grid-area: q5; }
 button, .primary-button {
     width: calc(var(--scaled-font) * 17);
     padding: calc(var(--scaled-font) * 1.14) var(--scaled-font);
@@ -530,15 +531,15 @@ input:required{
 /* hide all the fields that rely on a specific check box*/
 .pet-id-field { display:none; }
 .pet-details-field { display:none; }
-.other-pets-field { display:none; }
+.events-field { display:none; }
 /* show the hidden fields when these are checked */
 #specific-pet-yes:checked ~ .pet-id-field { display:block; }
 #specific-pet-no:checked ~ .pet-details-field { display:block; margin-top:var(--space-card); }
-#other-pet-yes:checked ~ .other-pets-field { display:block; margin-top:var(--space-card);}
+#events-yes:checked ~ .events-field { display:block; margin-top:var(--space-card);}
 /* re-hide the fields if they are unchecked */
 #specific-pet-no:not(:checked) ~ .pet-details-field { display:none; }
 #specific-pet-yes:not(:checked) ~ .pet-id-field { display:none; }
-#other-pet-no:checked ~ .other-pets-field { display:none; }
+#events-no:checked ~ .events-field { display:none; }
 hr {
     margin: calc(var(--scaled-font) * 2) 0;
     border-style: double none double none;
@@ -561,7 +562,7 @@ hr {
         "q q q q";
     }
     .pet-details-field .options,
-    .other-pets-field .options { 
+    .events-field .options { 
         display: flex; flex-direction: column; 
     }
 }
